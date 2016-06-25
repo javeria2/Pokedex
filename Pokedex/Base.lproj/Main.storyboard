@@ -24,12 +24,37 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qw3-Oe-5so">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAB-Ig-cGT">
+                                        <rect key="frame" x="103" y="0.0" width="169" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="hU5-Dg-pHq"/>
+                                            <constraint firstAttribute="width" constant="169" id="rbv-XC-4WJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="pokemon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8q-F3-XXE">
+                                        <rect key="frame" x="12" y="13" width="38" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="6dj-a7-pp9"/>
+                                            <constraint firstAttribute="width" constant="38" id="p0m-6g-7ID"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="playButton"/>
+                                        <connections>
+                                            <action selector="music:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lui-yc-6KI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.25515435350253607" green="0.6836397058823529" blue="0.40039244198973245" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="tAB-Ig-cGT" firstAttribute="centerX" secondItem="qw3-Oe-5so" secondAttribute="centerX" id="0P6-lI-yyl"/>
+                                    <constraint firstItem="n8q-F3-XXE" firstAttribute="leading" secondItem="qw3-Oe-5so" secondAttribute="leading" constant="12" id="Z4E-M9-Spw"/>
                                     <constraint firstAttribute="height" constant="55" id="aqr-Qu-AKF"/>
+                                    <constraint firstItem="n8q-F3-XXE" firstAttribute="top" secondItem="qw3-Oe-5so" secondAttribute="top" constant="13" id="qRr-mz-rAs"/>
+                                    <constraint firstItem="tAB-Ig-cGT" firstAttribute="top" secondItem="qw3-Oe-5so" secondAttribute="top" id="ukv-tO-3kz"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8dQ-le-RnT">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8dQ-le-RnT">
                                 <rect key="frame" x="16" y="119" width="335" height="528"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0Dm-pu-jdu">
@@ -46,20 +71,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="4qp-w8-qAo">
+                                                    <rect key="frame" x="0.0" y="8" width="120" height="82"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qin-nK-Zz9">
                                                     <rect key="frame" x="0.0" y="91" width="120" height="29"/>
                                                     <color key="backgroundColor" red="0.61971162940000002" green="0.83481570510000003" blue="0.56955808630000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="29" id="PiI-yq-hMx"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                                    <color key="textColor" red="0.99607843137254903" green="0.84313725490196079" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="4qp-w8-qAo">
-                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="93"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
-                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
@@ -67,10 +92,10 @@
                                             <constraint firstAttribute="bottom" secondItem="qin-nK-Zz9" secondAttribute="bottom" id="0mE-ad-w0m"/>
                                             <constraint firstItem="qin-nK-Zz9" firstAttribute="leading" secondItem="z8f-42-L2i" secondAttribute="leading" id="4SJ-qa-iQp"/>
                                             <constraint firstAttribute="trailing" secondItem="qin-nK-Zz9" secondAttribute="trailing" id="6Cc-Y7-ZC2"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="4qp-w8-qAo" secondAttribute="bottom" constant="19" id="bfE-Hx-cpY"/>
                                             <constraint firstAttribute="trailing" secondItem="4qp-w8-qAo" secondAttribute="trailing" id="q6d-xU-zRi"/>
                                             <constraint firstItem="4qp-w8-qAo" firstAttribute="leading" secondItem="z8f-42-L2i" secondAttribute="leading" id="r87-4s-fwa"/>
-                                            <constraint firstItem="4qp-w8-qAo" firstAttribute="top" secondItem="z8f-42-L2i" secondAttribute="top" id="r9H-MR-WaX"/>
+                                            <constraint firstItem="4qp-w8-qAo" firstAttribute="top" secondItem="z8f-42-L2i" secondAttribute="topMargin" id="sZf-oa-pwh"/>
+                                            <constraint firstItem="qin-nK-Zz9" firstAttribute="top" secondItem="4qp-w8-qAo" secondAttribute="bottom" constant="1" id="t6k-Ig-7oD"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="pokemonImage" destination="4qp-w8-qAo" id="rqZ-kb-yoW"/>
@@ -78,8 +103,12 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5QK-Zh-JfO"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RgZ-lO-Gm6"/>
+                                </connections>
                             </collectionView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Wgq-bT-pKx">
+                            <searchBar contentMode="redraw" placeholder="Pokedex..." translatesAutoresizingMaskIntoConstraints="NO" id="Wgq-bT-pKx">
                                 <rect key="frame" x="0.0" y="55" width="375" height="44"/>
                                 <color key="barTintColor" red="0.35919720760868001" green="0.60927483974358976" blue="0.5097869923384678" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -106,6 +135,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collection" destination="8dQ-le-RnT" id="czd-SI-X5I"/>
+                        <outlet property="musicButton" destination="n8q-F3-XXE" id="AeB-mM-NYL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -116,5 +146,7 @@
     <resources>
         <image name="1" width="120" height="120"/>
         <image name="background" width="1920" height="1080"/>
+        <image name="playButton" width="626" height="626"/>
+        <image name="pokemon" width="1024" height="465"/>
     </resources>
 </document>

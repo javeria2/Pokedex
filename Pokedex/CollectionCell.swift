@@ -13,6 +13,15 @@ class CollectionCell: UICollectionViewCell {
     @IBOutlet var pokemonImage: UIImageView!
     @IBOutlet var pokemonLabel: UILabel!
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.layer.cornerRadius = 7.0
+    }
+    
     func cellSetup(fetchPokemon: Pokemon) {
         pokemon = fetchPokemon
         pokemonLabel.text = pokemon.name.capitalizedString
