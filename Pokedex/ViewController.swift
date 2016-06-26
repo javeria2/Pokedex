@@ -9,12 +9,15 @@
 import UIKit
 import AVFoundation
 
+
+var player = AVAudioPlayer()
+var playerSwitch: Bool = true
+
 /* implement protocols */
 class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var collection: UICollectionView!
     var parser = parsePokemon()
-    var player = AVAudioPlayer()
     var music:Bool = false
     var searchResult = [Pokemon]()
     var searching:Bool = false
@@ -56,9 +59,11 @@ class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDel
         if music{
             player.pause()
             setImage("playButton.png")
+            playerSwitch = false
         } else {
             setImage("pause.png")
             player.play()
+            playerSwitch = true
         }
         music = !music
     }
@@ -93,6 +98,10 @@ class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDel
             performSegueWithIdentifier("info", sender: parser.pokemon[indexPath.row])
         } else {
             performSegueWithIdentifier("info", sender: searchResult[indexPath.row])
+        }
+        if player.playing {
+            player.pause()
+            playerSwitch = true
         }
     }
     
