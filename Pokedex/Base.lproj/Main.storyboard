@@ -346,10 +346,10 @@
                                 <rect key="frame" x="0.0" y="447" width="375" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evolutions:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yf-Dg-Rba">
-                                        <rect key="frame" x="136" y="8" width="102" height="21"/>
+                                        <rect key="frame" x="8" y="8" width="359" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="102" id="5oe-Ym-SmD"/>
-                                            <constraint firstAttribute="height" constant="21" id="nLk-dJ-pr2"/>
+                                            <constraint firstAttribute="height" constant="21" id="Olq-I5-AO8"/>
+                                            <constraint firstAttribute="width" constant="359" id="V5J-5J-l6o"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
                                         <color key="textColor" red="0.97254901960784312" green="0.76470588235294112" blue="0.12941176470588237" alpha="1" colorSpace="calibratedRGB"/>
@@ -360,9 +360,9 @@
                                 <constraints>
                                     <constraint firstItem="4yf-Dg-Rba" firstAttribute="centerX" secondItem="gu4-S7-Gr0" secondAttribute="centerX" id="CVS-yk-tIa"/>
                                     <constraint firstAttribute="height" constant="36" id="I33-6U-eE7"/>
-                                    <constraint firstItem="4yf-Dg-Rba" firstAttribute="centerX" secondItem="gu4-S7-Gr0" secondAttribute="centerX" id="X1e-Mh-d5L"/>
+                                    <constraint firstItem="4yf-Dg-Rba" firstAttribute="top" secondItem="gu4-S7-Gr0" secondAttribute="top" constant="8" id="ZUD-iC-eLi"/>
+                                    <constraint firstItem="4yf-Dg-Rba" firstAttribute="centerX" secondItem="gu4-S7-Gr0" secondAttribute="centerX" id="ZxD-jX-Zbw"/>
                                     <constraint firstAttribute="height" constant="36" id="jQD-HJ-4nm"/>
-                                    <constraint firstItem="4yf-Dg-Rba" firstAttribute="top" secondItem="gu4-S7-Gr0" secondAttribute="top" constant="8" id="lWE-Tg-zca"/>
                                     <constraint firstAttribute="width" constant="375" id="nam-Ij-g90"/>
                                     <constraint firstItem="4yf-Dg-Rba" firstAttribute="top" secondItem="gu4-S7-Gr0" secondAttribute="topMargin" id="vHz-Bo-ZlL"/>
                                 </constraints>
@@ -431,6 +431,8 @@
                         <outlet property="pokemonHeight" destination="NBM-IU-zLX" id="v9t-B4-RyH"/>
                         <outlet property="pokemonId" destination="CD6-cX-bOv" id="7gq-RQ-dHo"/>
                         <outlet property="pokemonImage" destination="1oI-jF-tqE" id="clU-KS-IVG"/>
+                        <outlet property="pokemonName" destination="9pt-Vg-5Ok" id="TPD-ZE-agS"/>
+                        <outlet property="pokemonName2" destination="57S-Ma-BxO" id="tR9-gT-ypR"/>
                         <outlet property="pokemonType" destination="7bj-w6-oWU" id="OEm-Ah-4bc"/>
                         <outlet property="pokemonWeight" destination="mZO-kC-P4Z" id="sYk-ue-pSt"/>
                     </connections>

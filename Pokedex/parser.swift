@@ -1,10 +1,5 @@
-//
-//  parser.swift
-//  Pokedex
-//
-//  Created by Sanchay  Javeria on 6/25/16.
-//  Copyright © 2016 SanchayJaveria. All rights reserved.
-//
+//A generic swift CSV parser taken from a cocoapod repository
+
 
 import Foundation
 

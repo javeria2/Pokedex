@@ -9,9 +9,11 @@
 import UIKit
 import AVFoundation
 
-
+/* all globals */
 var player = AVAudioPlayer()
 var playerSwitch: Bool = true
+let url = "http://pokeapi.co/api/v1/pokemon/"
+
 
 /* implement protocols */
 class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -42,7 +44,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UICollectionViewDel
         }
         
         searchBar.returnKeyType = UIReturnKeyType.Go
-        let tap = UITapGestureRecognizer(target: self, action : Selector("handleTap:"))
+        let tap = UITapGestureRecognizer(target: self, action : #selector(ViewController.handleTap(_:)))
         tap.numberOfTapsRequired = 1
         tap.cancelsTouchesInView = false
         collection.addGestureRecognizer(tap)

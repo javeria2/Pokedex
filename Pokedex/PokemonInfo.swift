@@ -9,6 +9,7 @@
 import UIKit
 
 class PokemonInfo: UIViewController {
+    
     var pokemon:Pokemon!
     @IBOutlet weak var evolutionLabel: UILabel!
     @IBOutlet weak var evolutionImage2: UIImageView!
@@ -21,6 +22,8 @@ class PokemonInfo: UIViewController {
     @IBOutlet weak var pokemonType: UILabel!
     @IBOutlet weak var pokemonDescription: UILabel!
     @IBOutlet weak var pokemonImage: UIImageView!
+    @IBOutlet weak var pokemonName2: UILabel!
+    @IBOutlet weak var pokemonName: UILabel!
     
     /* IBAction for back button */
     @IBAction func backButton(sender: AnyObject) {
@@ -32,6 +35,34 @@ class PokemonInfo: UIViewController {
     }
     
     override func viewDidLoad() {
+        
+        pokemonName.text = pokemon.name
+        pokemonName2.text = pokemon.name
+        pokemonId.text = "\(pokemon.id)"
+        pokemonImage.image = UIImage(named: "\(pokemon.id)")
+        pokemon.download {
+            self.pokemonHeight.text = self.pokemon.height
+            self.pokemonType.text = self.pokemon.type
+            self.pokemonAttack.text = self.pokemon.attack
+            self.pokemonDefence.text = self.pokemon.defence
+            self.pokemonWeight.text = self.pokemon.weight
+            self.pokemonDescription.text = self.pokemon.pokDescription
+            if self.pokemon.evolution["text"] == "" {
+                self.evolutionLabel.text = "No evolution found, current is:"
+                self.evolutionImage1.image = UIImage(named: "\(self.pokemonId.text!)")
+                self.evolutionImage2.hidden = true
+            } else {
+                if self.pokemon.evolution["level"] != "" {
+                    self.evolutionLabel.text = "Evolves to \(self.pokemon.evolution["text"]!), Level: \(self.pokemon.evolution["level"]!)"
+                } else {
+                    self.evolutionLabel.text = "Evolves to \(self.pokemon.evolution["text"]!)"
+                }
+                self.evolutionImage2.hidden = false
+                self.evolutionImage1.image = UIImage(named: "\(self.pokemonId.text!)")
+                self.evolutionImage2.image = UIImage(named: "\(self.pokemon.evolution["id"]!)")
+            }
+        }
+        
         super.viewDidLoad()
     }
 
@@ -41,9 +72,7 @@ class PokemonInfo: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     /*   if segue.identifier == "info" {
-         if let fetchPokemon = segue.destinationViewController as? P
-        } */
+
     }
 
 }
