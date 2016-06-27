@@ -226,10 +226,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="Ky4-hB-aDX">
-                                <rect key="frame" x="9" y="99" width="343" height="242"/>
+                                <rect key="frame" x="9" y="99" width="343" height="303"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xCh-aD-18q">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="242"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="303"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="r9Q-UY-1eQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="120"/>
@@ -241,17 +241,23 @@
                                                             <constraint firstAttribute="height" constant="120" id="zRN-Ct-95W"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ECV-nz-Noi">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ECV-nz-Noi">
                                                         <rect key="frame" x="120" y="0.0" width="223" height="120"/>
-                                                        <string key="text">This pokemon flies around, mystically, is funny, psychic, sugar and spice and everything nice. This description is just a demo to test my bio label cz why not? That's just how I roll. </string>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
                                                         <color key="textColor" red="0.28627450980392155" green="0.58039215686274515" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="hEy-bv-KSu">
-                                                <rect key="frame" x="0.0" y="140" width="265" height="21"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXy-O2-tuz">
+                                                <rect key="frame" x="0.0" y="140" width="343" height="1"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="uCi-1a-WF8"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalCentering" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="hEy-bv-KSu">
+                                                <rect key="frame" x="0.0" y="161" width="343" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkQ-KO-WeO">
                                                         <rect key="frame" x="0.0" y="0.0" width="47" height="21"/>
@@ -260,27 +266,27 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Grass/Psychic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bj-w6-oWU">
-                                                        <rect key="frame" x="47" y="0.0" width="106" height="21"/>
+                                                        <rect key="frame" x="73" y="0.0" width="106" height="21"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
                                                         <color key="textColor" red="0.23137254901960785" green="0.51764705882352946" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh1-5q-JCD">
-                                                        <rect key="frame" x="164" y="0.0" width="23" height="21"/>
+                                                        <rect key="frame" x="216" y="0.0" width="23" height="21"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.23137254901960785" green="0.51764705882352946" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="379" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CD6-cX-bOv">
-                                                        <rect key="frame" x="238" y="0.0" width="27" height="21"/>
+                                                        <rect key="frame" x="316" y="0.0" width="27" height="21"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
                                                         <color key="textColor" red="0.23137254901960785" green="0.51764705882352946" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalCentering" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="hgy-0C-VlW">
-                                                <rect key="frame" x="0.0" y="181" width="299" height="21"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalCentering" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="hgy-0C-VlW">
+                                                <rect key="frame" x="0.0" y="202" width="341" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Attack:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBF-Of-eZh">
                                                         <rect key="frame" x="0.0" y="0.0" width="58" height="21"/>
@@ -289,27 +295,27 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rL3-yx-jmA">
-                                                        <rect key="frame" x="101" y="1" width="27" height="20"/>
+                                                        <rect key="frame" x="115" y="1" width="27" height="20"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
                                                         <color key="textColor" red="0.23137254901960785" green="0.51764705882352946" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Defence:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srw-J3-dhS">
-                                                        <rect key="frame" x="163" y="0.0" width="74" height="21"/>
+                                                        <rect key="frame" x="191" y="0.0" width="74" height="21"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.23137254901960785" green="0.51764705882352946" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn9-O2-rCE">
-                                                        <rect key="frame" x="272" y="1" width="27" height="20"/>
+                                                        <rect key="frame" x="314" y="1" width="27" height="20"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
                                                         <color key="textColor" red="0.23137254901960785" green="0.51764705882352946" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalCentering" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="8do-ZK-3hq">
-                                                <rect key="frame" x="0.0" y="221" width="282" height="21"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalCentering" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="8do-ZK-3hq">
+                                                <rect key="frame" x="0.0" y="242" width="342" height="21"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmX-wc-Kp4">
                                                         <rect key="frame" x="0.0" y="0.0" width="64" height="21"/>
@@ -318,32 +324,68 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZO-kC-P4Z">
-                                                        <rect key="frame" x="99" y="1" width="27" height="20"/>
+                                                        <rect key="frame" x="119" y="1" width="27" height="20"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
                                                         <color key="textColor" red="0.23137254900000001" green="0.51764705879999995" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yq-ve-KEg">
-                                                        <rect key="frame" x="162" y="0.0" width="61" height="21"/>
+                                                        <rect key="frame" x="202" y="0.0" width="61" height="21"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" red="0.23137254901960785" green="0.51764705882352946" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBM-IU-zLX">
-                                                        <rect key="frame" x="264" y="1" width="18" height="20"/>
+                                                        <rect key="frame" x="324" y="1" width="18" height="20"/>
                                                         <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
                                                         <color key="textColor" red="0.23137254901960785" green="0.51764705882352946" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalCentering" alignment="center" spacing="88" translatesAutoresizingMaskIntoConstraints="NO" id="ROe-fX-4Fn">
+                                                <rect key="frame" x="0.0" y="283" width="145" height="21"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uID-OI-C4l">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="21"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <color key="textColor" red="0.23137254900000001" green="0.51764705879999995" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="400" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ0-FT-hxw">
+                                                        <rect key="frame" x="118" y="1" width="27" height="20"/>
+                                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                                        <color key="textColor" red="0.23137254900000001" green="0.51764705879999995" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="UXy-O2-tuz" firstAttribute="leading" secondItem="xCh-aD-18q" secondAttribute="leading" id="Nq0-Kx-igf"/>
+                                            <constraint firstAttribute="trailing" secondItem="UXy-O2-tuz" secondAttribute="trailing" id="b20-IM-RcP"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Gnh-Q4-Yk1">
+                                <rect key="frame" x="32" y="500" width="310" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Kk-qH-3jT">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="128"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="100" translatesAutoresizingMaskIntoConstraints="NO" id="GAf-Tj-EZf">
+                                        <rect key="frame" x="190" y="0.0" width="120" height="128"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="E2A-6X-lcO"/>
+                                    <constraint firstAttribute="width" constant="310" id="kH6-Wq-faH"/>
+                                </constraints>
+                            </stackView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gu4-S7-Gr0">
-                                <rect key="frame" x="0.0" y="447" width="375" height="36"/>
+                                <rect key="frame" x="0.0" y="469" width="375" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evolutions:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yf-Dg-Rba">
                                         <rect key="frame" x="8" y="8" width="359" height="21"/>
@@ -374,21 +416,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Gnh-Q4-Yk1">
-                                <rect key="frame" x="32" y="500" width="310" height="128"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Kk-qH-3jT">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="128"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="100" translatesAutoresizingMaskIntoConstraints="NO" id="GAf-Tj-EZf">
-                                        <rect key="frame" x="190" y="0.0" width="120" height="128"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="E2A-6X-lcO"/>
-                                    <constraint firstAttribute="width" constant="310" id="kH6-Wq-faH"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686274509807" green="0.86274509803921573" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -405,7 +432,7 @@
                             <constraint firstItem="Gnh-Q4-Yk1" firstAttribute="centerX" secondItem="tB3-N3-7Xr" secondAttribute="centerX" id="hin-sV-DfM"/>
                             <constraint firstItem="gu4-S7-Gr0" firstAttribute="top" secondItem="Ky4-hB-aDX" secondAttribute="bottom" constant="166" id="iNw-Th-iKh"/>
                             <constraint firstItem="gu4-S7-Gr0" firstAttribute="leading" secondItem="tB3-N3-7Xr" secondAttribute="leading" id="jbu-L9-ng4"/>
-                            <constraint firstItem="gu4-S7-Gr0" firstAttribute="top" secondItem="Ky4-hB-aDX" secondAttribute="bottom" constant="106" id="q5g-UZ-yZ5"/>
+                            <constraint firstItem="gu4-S7-Gr0" firstAttribute="top" secondItem="Ky4-hB-aDX" secondAttribute="bottom" constant="128" id="rFH-FP-w2m"/>
                             <constraint firstAttribute="trailing" secondItem="nUS-RQ-Glc" secondAttribute="trailing" id="tfZ-ep-H0K"/>
                             <constraint firstItem="nUS-RQ-Glc" firstAttribute="leading" secondItem="tB3-N3-7Xr" secondAttribute="leading" id="voo-BE-DbJ"/>
                             <constraint firstItem="nUS-RQ-Glc" firstAttribute="centerX" secondItem="tB3-N3-7Xr" secondAttribute="centerX" id="wVD-PN-ecL"/>
@@ -428,6 +455,7 @@
                         <outlet property="pokemonAttack" destination="rL3-yx-jmA" id="9dB-1t-87F"/>
                         <outlet property="pokemonDefence" destination="zn9-O2-rCE" id="FBY-gR-8qg"/>
                         <outlet property="pokemonDescription" destination="ECV-nz-Noi" id="dVT-6O-KWk"/>
+                        <outlet property="pokemonHP" destination="AJ0-FT-hxw" id="Eh7-gr-YP0"/>
                         <outlet property="pokemonHeight" destination="NBM-IU-zLX" id="v9t-B4-RyH"/>
                         <outlet property="pokemonId" destination="CD6-cX-bOv" id="7gq-RQ-dHo"/>
                         <outlet property="pokemonImage" destination="1oI-jF-tqE" id="clU-KS-IVG"/>

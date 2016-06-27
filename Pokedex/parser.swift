@@ -1,4 +1,4 @@
-//A generic swift CSV parser taken from a cocoapod repository
+//A generic swift CSV parser
 
 
 import Foundation

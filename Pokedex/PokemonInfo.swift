@@ -24,6 +24,7 @@ class PokemonInfo: UIViewController {
     @IBOutlet weak var pokemonImage: UIImageView!
     @IBOutlet weak var pokemonName2: UILabel!
     @IBOutlet weak var pokemonName: UILabel!
+    @IBOutlet weak var pokemonHP: UILabel!
     
     /* IBAction for back button */
     @IBAction func backButton(sender: AnyObject) {
@@ -47,6 +48,8 @@ class PokemonInfo: UIViewController {
             self.pokemonDefence.text = self.pokemon.defence
             self.pokemonWeight.text = self.pokemon.weight
             self.pokemonDescription.text = self.pokemon.pokDescription
+            
+            self.pokemonHP.text = self.pokemon.hp
             if self.pokemon.evolution["text"] == "" {
                 self.evolutionLabel.text = "No evolution found, current is:"
                 self.evolutionImage1.image = UIImage(named: "\(self.pokemonId.text!)")

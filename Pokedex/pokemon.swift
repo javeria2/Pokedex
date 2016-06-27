@@ -22,9 +22,19 @@ class Pokemon {
     private var pokemonDescription: String!
     private var Evolution: Dictionary<String, String>!
     private var pokemonUrl: String!
+    private var pokemonHP: String!
+    private var pokemonSpecies: String!
+    
     typealias customBlock = () -> ()
     
     /* create all the getters */
+    var hp: String {
+        if pokemonHP == nil {
+            pokemonHP = ""
+        }
+        return pokemonHP
+    }
+    
     var name: String {
         if pokemonName == nil {
             pokemonName = ""
@@ -74,6 +84,7 @@ class Pokemon {
         return pokemonType
     }
     
+    
     var pokDescription: String {
         if pokemonDescription == nil {
             pokemonDescription = ""
@@ -99,6 +110,10 @@ class Pokemon {
     func download(Block: customBlock) {
         Alamofire.request(.GET, NSURL(string: pokemonUrl)!).responseJSON { (Response) in //response is of type <AnyObject, NSError>
             let pokemonDictionary = Response.result.value as? Dictionary<String, AnyObject>
+            
+            if let HP = pokemonDictionary?["hp"] {
+                self.pokemonHP = "\(HP)"
+            }
             if let weight = pokemonDictionary?["weight"] {
                 self.pokemonWeight = "\(weight)"
             }
